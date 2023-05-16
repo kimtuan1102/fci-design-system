@@ -26,7 +26,9 @@ jobs:
         with:
           node-version: "lts/*"
       - name: Install dependencies
-        run: npm clean-install
+        run: npm install 
+      - name: Build app
+        run: npm run build 
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: npm audit signatures
       - name: Release
