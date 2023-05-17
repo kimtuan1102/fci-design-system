@@ -12,11 +12,17 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_15649263d9aea98"
   },
   "dependencies": {
     "vue": "^3.2.47"
   },
+  
+  "storybook": {
+      "url": "https://64643ba5603b523a93839500-qfprjyvqus.chromatic.com"
+  },
+
   "devDependencies": {
     "@storybook/addon-essentials": "7.0.12",
     "@storybook/addon-interactions": "7.0.12",
@@ -41,5 +47,7 @@
     "@semantic-release/github",
     "@semantic-release/npm",
     "@semantic-release/git"
-  ]
+  ],
+  "readme": "ERROR: No README data found!",
+  "_id": "fci-design-system@0.0.0"
 }

@@ -11,6 +11,8 @@ const count = ref(0)
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
+    
+    <Button primary label="Button" v-on:click="() => {}" />
     <p>
       Edit test
       <code>components/HelloWorld.vue</code> to test HMR
