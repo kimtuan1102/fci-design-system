@@ -18,7 +18,7 @@
   "dependencies": {
     "vue": "^3.2.47"
   },
-  
+  "packageManager": "pnpm@8.5.1",
   "storybook": {
       "url": "https://64643ba5603b523a93839500-qfprjyvqus.chromatic.com"
   },
