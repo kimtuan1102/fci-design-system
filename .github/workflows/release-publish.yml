@@ -31,7 +31,7 @@ jobs:
 
       - name: Build
         run: pnpm build
-      - run: pnpm publish
+      - run: pnpm publish -r --publish-branch ${{github.event.pull_request.base.ref}} --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Create a Release on GitHub
