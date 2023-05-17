@@ -31,9 +31,8 @@ jobs:
 
       - name: Build
         run: pnpm build
-      - run: npm ci
-      - name: Publish to NPM
-        run: npm publish
+      - run: pnpm ci
+      - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Create a Release on GitHub
