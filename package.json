@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "repositoryUrl": "https://github.com/kimtuan1102/fci-design-system.git",
   "files": [
     "dist"
   ],
