@@ -31,7 +31,6 @@ jobs:
 
       - name: Build
         run: pnpm build
-      - run: pnpm ci
       - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
